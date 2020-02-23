@@ -1,0 +1,12 @@
+.price{
+    position: absolute;
+    padding:0 0.5rem;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+}
+.product-image{
+    height: 120px; 
+    border: 1px solid black;
+}
+
