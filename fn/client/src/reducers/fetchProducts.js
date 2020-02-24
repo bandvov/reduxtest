@@ -7,11 +7,13 @@
 // export default fetchProducts;
 
 export function fetchProducts(state = [], action) {
-  switch (action.type) {
-    case 'PRODUCTS_FETCH_SUCCESS':
-      return action.items;
+    console.log('action', action);
 
-    default:
-      return state;
-  }
+    switch (action.type) {
+        case 'PRODUCTS_FETCH_SUCCESS':
+            return [...action.payload];
+
+        default:
+            return state;
+    }
 }
